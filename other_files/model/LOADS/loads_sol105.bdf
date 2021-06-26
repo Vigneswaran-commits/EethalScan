@@ -1,8 +1,0 @@
-$
-$ Loads and parameters for sol 105 test load case :
-$
-LOAD     205     1.      10.     601051  15.     601052  40.     601053
-GRAV     601051  1001    1.      1.      0.      0.
-GRAV     601052  1001    1.      0.      1.      0.
-GRAV     601053  1001    1.      0.      0.      1.
-$
