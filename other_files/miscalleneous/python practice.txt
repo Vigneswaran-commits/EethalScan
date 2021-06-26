@@ -1,0 +1,556 @@
+https://www.learnpython.org/en/Hello,_World!
+-----------------------------example-for-loops-----------------------------------------
+import json
+
+def function():
+    a = 5
+    b = 6.3
+    c = int(b)
+    print(b)
+    print(c)
+    print(type(c))
+    fruits = ["banana","apple","orange"]
+    #loop over fruits
+    #for x in fruits:
+    #    print(x)
+        
+    #for x in "banana":
+    #    print(x);
+    
+    #for loop with increment=1
+    #for x in range(1, 6):
+    #    print(x)
+        
+    #for loop with increments
+    #for x in range(1, 6, 2):
+    #    print(x)
+    #else:
+    #    print("For loop ended!")
+        
+    #nested loops
+    vegetable = ["carrot", "beans", "onion"]
+    #for x in fruits:
+    #    for y in vegetable:
+    #        print(x, y)
+    
+    #1.python object to json string
+    #python object (dictionary)
+    x = {
+      "nodeid": 1,
+      "xcoord": 0.1,
+      "ycoord": 0.2,
+      "zcoord": 0.3
+    }
+    
+    #convert to json
+    y = json.dumps(x, indent=4, separators=(", ", ":"), sort_keys=True)
+    
+    #print json string
+    print(y)
+    
+    #2.json string to python object
+    x = '{"zcoord": 0.3, "xcoord": 0.1, "ycoord": 0.2, "node id": 1}'
+    
+    #convert to python
+    y = json.loads(x)
+    
+    #print python dictionary
+    print(y["xcoord"])
+
+x = 1
+if x == 1:
+    # indented four spaces
+    print("Output")
+    print("------")
+    function()
+
+-----------------------------example-zip-filters-list-----------------------------------------
+import json
+
+def function():
+    #nested loops
+    vegetables = ["carrot", "beans", "onion", "tomato"]
+    fruits = ["apple", "banana", "orange"]
+    #for x in fruits:
+    #    for y in vegetable:
+    #        print(x, y)
+    # parallel iteration
+    for x, y in zip(vegetables, fruits):
+        print(x, y)
+        
+    # parallel iteration
+    zipped = zip(vegetables, fruits)
+    print(list(zipped))
+
+def even_test():
+    def even(number):
+        if (number % 2) == 0:
+            return  True
+        return  False
+
+    def square(number):
+        return number*number
+
+    numbers = [1,2,3,4,5,6,7,8]
+    even_numbers = list(filter(even, numbers))
+    even_numbers_squared = list(map(square, even_numbers))
+
+    print(list(even_numbers_squared))
+
+x = 1
+if x == 1:
+    # indented four spaces
+    print("Output")
+    print("------")
+    function()
+    even_test()
+
+----------------------------example-strings-------------------------------------
+def function():
+    my_string = "Python"
+    edited_string = my_string[1:3]
+    print(edited_string)
+    
+    #= my_string[0] first char, "P"
+    #= my_string[-1] last char, "n"
+    #= my_string[3:-2] third to second last char, "th"
+    
+x = 1
+if x == 1:
+    # indented four spaces
+    print("Output")
+    print("------")
+    function()
+
+----------------------------example-dictionary--------------------------------------
+new = {'name': 'vicky', 'age': 32}
+print("name: ", new['name'])
+print("age: ", new['age'])
+
+verynew = new.copy()
+print("age: ", verynew['age'])
+
+seq = ('name', 'age')
+newdict = dict.fromkeys(seq, 'dontknow')
+print("New Dictionary : %s" %  str(newdict))
+
+seq_keys = new.keys()
+seq_values = new.values()
+
+print(seq_keys)
+print(seq_values)
+
+variable=new.get('name')
+print(variable)
+
+for key in new:
+    print(key, "==", new[key])
+    
+for x, y in new.items():
+    print(x, "==", y)
+    
+for value in new.values():
+    print(value)
+    
+newlist = new.keys()
+
+-------------------------example-dictionary-value-cross-access--------------------
+
+# creating a new dictionary
+my_dict ={"java":100, "python":112, "c":11}
+ 
+# list out keys and values separately
+key_list = list(my_dict.keys())
+val_list = list(my_dict.values())
+ 
+# print key with val 100
+position = val_list.index(100)
+print(key_list[position])
+ 
+# print key with val 112
+position = val_list.index(112)
+print(key_list[position])
+ 
+# one-liner
+print(list(my_dict.keys())[list(my_dict.values()).index(112)])
+
+-----------------------------example-file handling-------------------------------------------
+# Python code to illustrate read() mode 
+file = open("C:\\Users\\Vigneswaran\\Desktop\\test\\file.txt", "r")
+print (file.read()) 
+file.close()
+
+# Python code to create a file
+file = open("C:\\Users\\Vigneswaran\\Desktop\\test\\file.txt", "a")
+file.write("This is the write command. ")
+file.write("It allows us to write in a particular file")
+file.close()
+
+------------------------------example-different python syntax------------------------------------------------------------
+
+import sys
+
+# reverse a list
+newlist = ["apple", "banana", "orange"]
+newlist.reverse()
+print(newlist)
+
+# print list in any order
+integlist = [1,2,3]
+x,y,z = integlist
+print(x,y,z)
+print(z,y,x)
+
+# generators inside function
+sum(i for i in range(5))
+
+# group lists
+Year = (1999, 2003, 2011, 2017)
+Month = ("Mar", "Jun", "Jan", "Dec")
+Day = (11,21,13,5)
+print(zip(Year,Month,Day))
+
+# Swap two numbers using a single line of code
+x,y = 4,5
+x,y = y,x
+print(x,y)
+
+# Transpose a Matrix
+mat = [[1,2],
+[3,4],
+[5,6]]
+print(zip(*mat))
+
+# Print a string N Times
+str ="Point";
+print(str * 3);
+
+# reverse list by list slicing
+#Reversing Strings
+list1 = ["a","b","c","d"]
+print(list1[::-1])
+
+# Reversing Numbers
+list2 = [1,3,6,4,2]
+print(list2[::-1])
+
+# memory usage
+a, b, c,d = "abcde" ,"xy", 2, 15.06
+print(sys.getsizeof(a))
+print(sys.getsizeof(b))
+print(sys.getsizeof(c))
+print(sys.getsizeof(d))
+
+# convert all items in a list of strings to float
+floatlist = list(map(float, strlist))
+
+-----------------------------------------------------------------------------
+Python has the following data types built-in by default, in these categories:
+
+Text Type:	str
+Numeric Types:	int, float, complex
+Sequence Types:	list, tuple, range
+Mapping Type:	dict
+Set Types:	set, frozenset
+Boolean Type:	bool
+Binary Types:	bytes, bytearray, memoryview
+-----------------------------------------------------------------------------
+Python-json equivalents
+
+Python	JSON
+------+-----
+dict	Object
+list	Array
+tuple	Array
+str	String
+int	Number
+float	Number
+True	true
+False	false
+None	null
+-----------------------------------------------------------------------------
+
+Make a class object serializable, when converting to json
+---------------------------------------------------------
+Do you have an idea about the expected output? For example, will this do?
+
+>>> f  = FileItem("/foo/bar")
+>>> magic(f)
+'{"fname": "/foo/bar"}'
+In that case you can merely call json.dumps(f.__dict__).
+
+If you want more customized output then you will have to subclass JSONEncoder and implement your own custom serialization.
+
+For a trivial example, see below.
+
+>>> from json import JSONEncoder
+>>> class MyEncoder(JSONEncoder):
+        def default(self, o):
+            return o.__dict__    
+
+>>> MyEncoder().encode(f)
+'{"fname": "/foo/bar"}'
+Then you pass this class into the json.dumps() method as cls kwarg:
+
+json.dumps(cls=MyEncoder)
+If you also want to decode then you'll have to supply a custom object_hook to the JSONDecoder class. For example:
+
+>>> def from_json(json_object):
+        if 'fname' in json_object:
+            return FileItem(json_object['fname'])
+>>> f = JSONDecoder(object_hook = from_json).decode('{"fname": "/foo/bar"}')
+>>> f
+<__main__.FileItem object at 0x9337fac>
+>>> 
+-----------------------------------------------------------------------------
+
+Python list declaration and initialization
+------------------------------------------
+from typing import List
+listname: List[listtype]
+listname = [] or listname = list() #initialize to empty, usually in constructor
+listname = [object of listtype/string/integer/etc.]*1000     #initialize to size of 1000
+
+other methods
+-------------
+listname = [None] * N
+
+listname = [None for x in xrange(N)]
+
+listname = [None for x in range(N)]
+
+listname = []
+for x in xrange(N): a.append(None)
+
+-----------------------------------------------------------------------------
+Print python lists with good formatting
+---------------------------------------
+print(*a)                                   # lists separated by spaces
+  
+print(*a, sep = ", ")                       # lists separated by commas
+   
+print(*a, sep = "\n")                       # lists separated by new lines
+
+print(' '.join(a))                          # lists joined and printed
+
+print str(a)[1:-1]                          # print the list by converting a list of integers to string
+
+print(' '.join(map(str, a)))                # convert any list to string using map, and print
+with spaces between them
+
+print('\n'.join(map(str, a)))               # lconvert any list to string using map, and print
+with new lines between them
+-----------------------------Python pages-----------------------------------------
+1.one key to multiple values
+https://www.oreilly.com/library/view/python-cookbook/0596001673/ch01s06.html
+2.Run a python module
+https://realpython.com/run-python-scripts/
+-----------------------Python-script vs module difference--------------------------
+A plain text file containing Python code that is intended to be directly executed by the user is usually called script, which is an informal term that means top-level program file.
+
+On the other hand, a plain text file, which contains Python code that is designed to be imported and used from another Python file, is called module.
+
+So, the main difference between a module and a script is that modules are meant to be imported, while scripts are made to be directly executed.
+
+In either case, the important thing is to know how to run the Python code you write into your modules and scripts.
+------------------------------Python commands----------------------------------------------
+import os 
+dir_path = os.path.dirname(os.path.realpath(test.py))
+------
+#To get the current working directory use
+import os
+cwd = os.getcwd()
+The os and os.path modules.
+os.path.realpath(path) #returns "the canonical path of the specified filename, eliminating any symbolic links encountered in the path"
+os.path.dirname(path) # returns "the directory name of pathname path"
+os.getcwd() #returns "a string representing the current working directory"
+os.chdir(path) #"change the current working directory to path"
+---------------
+# run module
+cd D:\Vigneswaranwork\Interface_development\Marc\dat
+D:
+python
+import importlib
+import runpy
+importlib.import_module('run')
+runpy.run_module(mod_name='run', init_globals=None, run_name='__main__', alter_sys=False)
+importlib.reload(run)
+
+or
+
+runpy.run_path(file_path='scan_file.py, init_globals=None, run_name='__main__')
+importlib.reload(scan_file)
+
+
+import types
+def imports():
+    for name, val in globals().items():
+        if isinstance(val, types.ModuleType):
+            yield val.__name__
+
+---------------------------numpy--------------------------------------
+
+import numpy as np
+
+print("output:")
+ndarr1 = np.empty(0.0, np.float64, 'C')
+ndarr1 = np.zeros((1, 3))
+print(ndarr1.shape)
+# array, where to insert, what to insert, axis=0(row), 1(col)
+#ndarr1 = ndarr1.reshape(1, 3) # used after insertion
+ndarr1 = np.insert(ndarr1, 1, np.array((0.1, 0.2, 0.3)), axis = 0)
+ndarr1 = np.insert(ndarr1, 2, np.array((0.4, 0.5, 0.6)), axis = 0)
+print(ndarr1)
+
+---------------------------numpy--------------------------------------
+
+import numpy as np
+
+print("output:")
+ndarr1 = np.empty((3,2), np.int32, 'C')
+print(ndarr1.shape)
+# array, where to insert, what to insert, axis=0(row), 1(col)
+first = np.array([[1],
+                  [2],
+                  [3]], dtype = np.int32)
+print("first shape: ", first.shape)
+second = np.array([[4],
+                  [5],
+                  [6]], dtype = np.int32)
+ndarr1 = np.insert(ndarr1, 0, first, axis = 1)
+#ndarr1 = np.insert(ndarr1, 1, second, axis = 1)
+print(ndarr1)
+print("final shape: ", ndarr1.shape)
+--------------------------numpy-flatten----------------------------------
+import numpy as np
+print("output:")
+ndarr1 = np.empty((1, 3), np.int32, 'C')
+ndarr1 = np.zeros((1, 3))
+print(ndarr1.shape)
+# array, where to insert, what to insert, axis=0(row), 1(col)
+ndarr1 = np.insert(ndarr1, 1, np.array((1,2,3)), axis = 0)
+ndarr1 = np.insert(ndarr1, 2, np.array((4,5,6)), axis = 0)
+print(ndarr1)
+newarr = ndarr1.flatten()
+print(newarr)
+---------------------------------list to ndarray-------------------------
+import numpy as np
+
+my_list = [2,4,6,8,10]
+
+my_array = np.asarray(my_list)
+
+# printing my_array
+print(my_array)
+# printing the type of my_array
+print(type(my_array))
+
+-------------------------numpy concatenate-----------------------------
+import numpy as np
+
+ndarr1 = np.empty((75, 6), np.int32, 'C')
+ndarr2 = np.empty((144, 6), np.int32, 'C')
+
+ndarr = np.concatenate((ndarr1, ndarr2), axis=0)
+
+print(ndarr)
+print(ndarr.shape)
+
+-------------------------------------------------------------------------
+from collections import OrderedDict
+dict = OrderedDict()
+dict["a"] = {}
+dict["a"]["b"] = {}
+dict["b"] = {1:2}
+print(dict)
+--------------------------------------------------------------------------
+Inserting into nested dictionaries
+https://stackoverflow.com/questions/9680863/nested-dictionaries-extracting-paths-to-leaves
+(see ninjagecko's answer)
+--------------------------------------------------------------------------
+from collections import OrderedDict
+import collections
+
+from collections import OrderedDict
+import collections
+
+dict = OrderedDict()
+dict["a"] = OrderedDict()
+#dict["a"]["b"] = OrderedDict()
+#dict["a"]["b"]["c"] = OrderedDict()
+print(dict)
+
+def iterdict(d, parent):
+  for k,v in d.items():        
+     if isinstance(v, OrderedDict): # iterate if value is OrderedDict
+         if(parent == k):
+             print(parent, ", ", k)
+             d[k] = OrderedDict({'b':OrderedDict()})
+         iterdict(v, parent)
+     else:            
+         print (k,":",v)
+
+iterdict(dict, 'a')
+
+print(dict)
+-----------------------recursive function---------------------------------
+https://www.tutorialspoint.com/How-to-recursively-iterate-a-nested-Python-dictionary
+
+
+------------------------------for loops-----------------------------------
+
+x = 1
+y = 1
+part_ids = [3,4,5]
+z = [x + y + i for i in part_ids]
+print(z)  ---->z is a list here
+
+for i in part_ids:
+    z = x + y + i
+print(z)  ---->z is a number here
+--------------------------------------------------------------------------
+
+# Program to check the list contains elements of another list
+
+# List1
+List1 = ['python' ,  'javascript', 'csharp', 'go', 'c', 'c++']
+ 
+# List2
+List2 = ['csharp1' , 'go', 'python']
+
+check =  all(item in List1 for item in List2)
+ 
+if check is True:
+    print("The list {} contains all elements of the list {}".format(List1, List2))    
+else :
+    print("No, List1 doesn't have all elements of the List2.")
+-----------------------------dictionary-mult values-----------------------
+dict: mult values for key
+https://thispointer.com/python-dictionary-with-multiple-values-per-key/
+
+
+-----------------------negative values for numppy reashape-----------------------
+
+import numpy as np
+
+
+
+print("Output: ")
+
+
+a=np.arange(6)
+
+print(a)
+
+
+
+a = a.reshape(-1, 3, 2)
+
+print(a)
+
+--------------------------------------------------------------------------
+
+dict: mult values for key
+https://thispointer.com/python-dictionary-with-multiple-values-per-key/
+
+--------------------------------------------------------------------------

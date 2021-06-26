@@ -1,0 +1,78 @@
+
+$
+$ General parameters :
+$
+SOL 111
+TIME 600
+CEND
+SEALL = ALL
+SUPER = ALL
+TITLE = ONE_MS2_XYZ
+ECHO = NONE
+MAXLINES = 999999999
+$
+$ Outputs and sub-cases :
+$
+SET 1 = 1 THRU 99999
+SET 2 = 60000 THRU 64999, 80000 THRU 89999, 500000 THRU 599999
+$
+DISPLACEMENT(PLOT,REAL,RALL)=ALL
+VELOCITY(PLOT,REAL,CRMS)=ALL
+ACCELERATION(PLOT,REAL,CRMS)=ALL
+OLOAD(PLOT,REAL,CRMS)=ALL
+GPFORCE(PLOT,REAL,CRMS)=ALL
+MPCFORCES(PLOT,CRMS) = ALL
+STRAIN(PLOT,REAL,CENTER,CRMS)=ALL
+STRESS(PLOT,REAL,CENTER,CRMS)=ALL
+FORCE(PLOT,REAL,CENTER,CRMS)=ALL
+ESE(PLOT)=1
+EKE(PLOT)=1
+EDE(PLOT)=1
+$
+SUBCASE 601
+   SUBTITLE=SINUS_X
+   METHOD = 111
+   FREQ = 112
+   DLOAD = 113
+   RANDOM = 3501
+$
+BEGIN BULK
+$
+$ Parameters :
+$
+PARAM       POST       0
+PARAM   PRTMAXIM     YES
+PARAM    NOCOMPS      -1
+PARAM      K6ROT   100.0
+PARAM          G    0.02
+MDLPRM,HDF5,1
+$
+$ Model :
+$
+include '../MESH/coordSys.bdf'
+include '../MATS/mats.bdf'
+include '../PROPS/props.bdf'
+$
+include '../MESH/elemNodes_pan_MX.bdf'
+include '../MESH/elemNodes_pan_MY.bdf'
+include '../MESH/elemNodes_pan_MZ.bdf'
+include '../MESH/elemNodes_pan_PX.bdf'
+include '../MESH/elemNodes_pan_PY.bdf'
+include '../MESH/elemNodes_pan_PZ.bdf'
+include '../MESH/elemNodes_pan_SUP.bdf'
+include '../MESH/elemNodes_struts.bdf'
+include '../MESH/elemNodes_frame.bdf'
+$
+include '../MESH/mpcRbe_struts.bdf'
+include '../MESH/mpcRbe_boxes.bdf'
+include '../MESH/mpcRbe_frame.bdf'
+$
+include '../LOADS/unit_accel_sinus_xyz.bdf'
+$
+RANDPS      3501     601     601     1.0     0.0    3502
+TABRND1     3502     LOG     LOG   
+             5.0   0.026    20.0   0.026    50.0    0.16   800.0    0.16
+          2000.0   0.026 999999.   0.026    ENDT
+$
+ENDDATA
+$

@@ -1,0 +1,91 @@
+$
+NASTRAN HDF5=0
+$
+$ File management :
+$
+ASSIGN PUNCH='sol111_ri_xyz_corners_b',NEW,UNIT=7,TEMP,FORMATTED,DELETE
+ASSIGN MASTER='sol111_ri_xyz_corners_b.MASTER',NEW,TEMP,DELETE
+ASSIGN DBALL='sol111_ri_xyz_corners_b.DBALL',NEW,TEMP,DELETE
+$
+$ General parameters :
+$
+SOL 111
+TIME 600
+CEND
+SEALL = ALL
+SUPER = ALL
+TITLE = ONE_MS2_XYZ
+ECHO = NONE
+MAXLINES = 999999999
+$
+$ Outputs and sub-cases :
+$
+SET 1 = 1 THRU 99999
+SET 2 = 60000 THRU 64999, 80000 THRU 89999, 500000 THRU 599999
+$
+DISPLACEMENT(PLOT,REAL)=ALL
+VELOCITY(PLOT,REAL)=ALL
+ACCELERATION(PLOT,REAL)=ALL
+OLOAD(PLOT,REAL)=ALL
+GPFORCE(PLOT,REAL)=ALL
+MPCFORCE(PLOT,REAL)=ALL
+STRAIN(PLOT,REAL,BILIN)=2
+STRESS(PLOT,REAL,BILIN)=2
+FORCE(PLOT,REAL,BILIN)=2
+ESE(PLOT)=1
+EKE(PLOT)=1
+EDE(PLOT)=1
+$
+SUBCASE 601
+   SUBTITLE=SINUS_X
+   METHOD = 111
+   FREQ = 112
+   DLOAD = 113
+$
+SUBCASE 602
+   SUBTITLE=SINUS_Y
+   METHOD = 211
+   FREQ = 312
+   DLOAD = 213
+$
+SUBCASE 603
+   SUBTITLE=SINUS_Z
+   METHOD = 311
+   FREQ = 312
+   DLOAD = 313
+$
+BEGIN BULK
+$
+$ Parameters :
+$
+PARAM       POST       0
+PARAM   PRTMAXIM     YES
+PARAM    NOCOMPS      -1
+PARAM      K6ROT   100.0
+PARAM          G    0.02
+MDLPRM,HDF5,1
+$
+$ Model :
+$
+include '../MESH/coordSys.bdf'
+include '../MATS/mats.bdf'
+include '../PROPS/props.bdf'
+$
+include '../MESH/elemNodes_pan_MX.bdf'
+include '../MESH/elemNodes_pan_MY.bdf'
+include '../MESH/elemNodes_pan_MZ.bdf'
+include '../MESH/elemNodes_pan_PX.bdf'
+include '../MESH/elemNodes_pan_PY.bdf'
+include '../MESH/elemNodes_pan_PZ.bdf'
+include '../MESH/elemNodes_pan_SUP.bdf'
+include '../MESH/elemNodes_struts.bdf'
+include '../MESH/elemNodes_frame.bdf'
+$
+include '../MESH/mpcRbe_struts.bdf'
+include '../MESH/mpcRbe_boxes.bdf'
+include '../MESH/mpcRbe_frame.bdf'
+$
+include '../LOADS/unit_accel_sinus_xyz.bdf'
+$
+ENDDATA
+$

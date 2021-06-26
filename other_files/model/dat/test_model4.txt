@@ -1,0 +1,30 @@
+Card 1 Element(s) suitable for this analysis option:
+----------------------------------------------------
+ELASTIC:[21, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 67, 68, 73, 74, 98, 124, 125, 126, 127, 184]
+Card 2 Element description:
+---------------------------
+Element 134:Three-dimensional Four-node Tetrahedron
+Card 3 Element class and other elements in the class:
+-----------------------------------------------------
+Element 134:Class18
+Other elements in Element 134 class:[135, 164]
+Card 4 Element(s) Properties:
+-----------------------------
+Element_Type:134
+Number_of_Nodes:4
+Number_of_DirectStress:3
+Number_of_ShearStress:3
+Number_of_IntegrationPoints:1
+Number_of_DegreesofFreedom:3
+Number_of_Coordinates:3
+Updated_Lagrange_Available:Yes
+Card 5 Analysis options to use:
+-------------------------------
+Element 134:
+Card 6 Analysis: 
+----------------
+Elastic analysis with multi-loads:[134]
+Card 7 Card related to analysis options used: 
+---------------------------------------------
+ELASTIC:['POINT LOAD', 'DISTLOADS', 'CHANGE STATE', 'THERMAL LOADS', 'ADAPTIVE']
+Card 0

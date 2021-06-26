@@ -1,0 +1,220 @@
+----------------------------------groupby()------------------------------------------------
+groupeditems = dataframe_card6.groupby('Solution Name')
+groupeditems
+
+for solname, solname_df in groupeditems: # iterator
+    print(solname)
+    print(Solution_Name_df)
+
+groupeditems.get_group('Elastic analysis with multi-loads')
+-------------------------------------------------------------------------------------------
+
+.loc[] works on label.
+
+.iloc[] works on index.
+-------------------------------------------------------------------------------------------
+
+# for each loaded dataset you have to specify the formats to make DataFrame efficient
+df = pd.read_csv(new_file,
+                 dtype={"colA": "int8",
+                        "colB": "int16",
+                        "colC": "uint8",
+                        "colcat": "category"},
+                 parse_dates=["colD","colDt"])
+-------------------------------------------------------------------------------------------
+# show installed versions
+pd.__version__
+pd.show_versions()
+-------------------------------------------------------------------------------------------
+# example dataframe
+df = pd.DataFrame({'col1':[100, 200], 'col2':[300, 400]})
+df
+pd.DataFrame(np.random.rand(4, 8))
+pd.DataFrame(np.random.rand(4, 8), columns=list('abcdefgh'))
+-------------------------------------------------------------------------------------------
+# rename columns
+df = pd.DataFrame({'col1':[100, 200], 'col2':[300, 400]})
+df = df.rename({'col1':'colone', 'col2':'coltwo'}, axis='columns')
+df.columns = ['colone', 'coltwo'] # to replace all columns by column attribute
+df.columns = df.columns.str.replace(' ', '_') # to replace ' ' by '_'
+df
+df.add_prefix('X_')
+df.add_prefix('_Y')
+
+-------------------------------------------------------------------------------------------
+# reverse row order
+df.loc[::-1].head()
+df.loc[::-1].reset_index(drop=True).head() # index not reversed
+-------------------------------------------------------------------------------------------
+# reverse column order
+df.loc[:, ::-1].head()
+df.loc[:, ::-1].reset_index(drop=True).head() # index not reversed
+-------------------------------------------------------------------------------------------
+# select columns of any or multiple types
+df.dtypes
+df.select_dtypes(include='number')
+df.select_dtypes(include=['number', 'object'])
+df.select_dtypes(exclude='number')
+-------------------------------------------------------------------------------------------
+# convert strings to numbers, for operations
+df = pd.DataFrame({'col1':[100, 200], 'col2':[300, -]})
+df
+df.dtypes
+df.astype({'col1':'float'}).dtypes # change col2 type to float
+pd.to_numeric(df.col_two, error="coerce") # convert any invalid in column 2 to NAN
+pd.to_numeric(df.col_two, error="coerce").fillna(0) # NAN to 0
+
+# entire dataframe in one line code
+df.apply(pd.to_numeric, error="coerce").fillna(0)
+df
+-------------------------------------------------------------------------------------------
+#reduce dataframe size, while loading
+df.info(memory_usage='deep')
+
+cols_list = ['a', 'b']
+pd.read_csv(card1.csv, usecols=cols_list) # only get these columns
+
+
+dtypes = {'a':'numbers'}
+pd.read_csv(card1.csv, usecols=cols_list, dtype=dtypes) # only get these columns, & only nos on col a 
+-------------------------------------------------------------------------------------------
+# concatenate two similar csv files
+from glob import glob
+pd.read_csv('card1.csv').head()
+pd.read_csv('card2.csv').head()
+files = sorted(glob(card*.csv))
+pd.concat(pd.read_csv(file) for file in files) # or the next line
+pd.concat((pd.read_csv(file) for file in files), ignore_index=True)
+-------------------------------------------------------------------------------------------
+#concatenate columns from multiple csv files
+
+pd.read_csv('card1.csv').head()
+pd.read_csv('card2.csv').head()
+files = sorted(glob(card*.csv))
+pd.concat((pd.read_csv(file) for file in files), axis='columns').head()
+-------------------------------------------------------------------------------------------
+# create dataframe from clipboard
+# copy from excel, or any file, and call this in notebook
+df = pd.read_clipboard()
+df
+-------------------------------------------------------------------------------------------
+# split no of df rows according to fraction value-wont work if index values of df are not unique
+len(df)
+df1 = df.sample(frac=0.75, random_state=1234)  # put 75% of rows in df1
+df2 = df.drop(df1.index)                       # drop the rest of rows in df2
+len(df1) + len(df2)      # check
+df1.index.sort_values() # test
+df2.index.sort_values() # test
+
+-------------------------------------------------------------------------------------------
+# select column by item types (column name should not have spaces)
+dataframe_card2[dataframe_card2.Filename.isin(['test_model1.dat', 'test_model2.dat'])]
+dataframe_card2[~dataframe_card2.Filename.isin(['test_model1.dat', 'test_model2.dat'])]
+
+-------------------------------------------------------------------------------------------
+# select column by value count
+counts = dataframe_card2.Filename.value_counts()
+counts.nlargest(1).index
+dataframe_card2[dataframe_card2.Filename.isin(counts.nlargest(1).index))]
+dataframe_card2[~dataframe_card2.Filename.isin(counts.nlargest(1).index))]
+-------------------------------------------------------------------------------------------
+# handle missing values in df
+df.isna().sum() # says, no of missing values in each column
+df.isna().sum() # says, mean of no of missing values in each column
+df.dropna(axis='columns') # drop any column with missing values
+df.dropna(thresh=len(df)*0.9, axis='columns') # keep any column with atleast 90% values present
+-------------------------------------------------------------------------------------------
+# split string into multiple columns
+dataframe_card2.Filename.str.split('.', expand=True)
+dataframe_card2[['fname', 'extension']]=dataframe_card2.Filename.str.split('.', expand=True)
+dataframe_card2[['fname']]=dataframe_card2.Filename.str.split('.', expand=True)[0]
+dataframe_card2[['extension']]=dataframe_card2.Filename.str.split('.', expand=True)[1]
+-------------------------------------------------------------------------------------------
+
+# expand series of lists into dataframe
+df = pd.DataFrame({'col1':[100, 200], 'col2':[[1,,2][3,4]]})
+df_new = df.col_two.apply(pd.Series)
+pd.concat([df, df_new], axis='columns')
+
+-------------------------------------------------------------------------------------------
+# sum of item_price col, using orderid input
+orders[orders.orderid == 1].item_price.sum()
+orders.groupby('orderid').item_price.sum() # for every item in orderid
+orders.groupby('orderid').item_price.agg(['sum', 'count']) # for every item in orderid, get sum and count
+-------------------------------------------------------------------------------------------
+
+# combine the output of an aggregation with a DataFrame
+total_price = orders.groupby('orderid').item_price.transform('sum') # for every item in orderid, but matches the sum's length to item_price's length
+orders['total_price'] = total_price # add this as a new column in orders
+orders['percentage'] = orders.item_price/orders.total_price # easy to calc other data
+-------------------------------------------------------------------------------------------
+
+# select a slice of rows and columns
+titanic.describe()
+titanic.describe().loc['min':'max']
+titanic.describe().loc['min':'max', 'Pclass':'Parch']
+
+-------------------------------------------------------------------------------------------
+# reshape a multi-indexed series
+titanic.Survived.mean()
+titanic.groupby('Sex').Survived.mean()
+titanic.groupby(['Sex', 'Pclass']).Survived.mean() # show all combinations of mean
+titanic.groupby(['Sex', 'Pclass']).Survived.mean().unstack() # make it a dataframe data
+
+-------------------------------------------------------------------------------------------
+
+# create a pivot table
+titanic.pivot_table(index='Sex', columns='Pclass', values='Survived', aggfunc='mean') # all a mentioned by us
+titanic.pivot_table(index='Sex', columns='Pclass', values='Survived', aggfunc='mean', margins=True)
+titanic.pivot_table(index='Sex', columns='Pclass', values='Survived', aggfunc='count', margins=True)
+
+-------------------------------------------------------------------------------------------
+# convert continuous data to categorical data
+titanic.Age.head(10)
+pd.cut(titanic.Age, bins=[0, 18, 25, 99], labels=['child', 'young adult', 'adult']).head(10)
+
+
+-------------------------------------------------------------------------------------------
+# change display options
+titanic.head()
+pd.set_option('display.float_format', '{:.2f}'.format) # not changes the values, only for display purpose
+titanic.head()
+pd.reset_option('display.float_format')
+
+-------------------------------------------------------------------------------------------
+
+# style a DataFrame
+format_dict = {'Date':'{:%m/%d/%y}', 'Close':'${:.2f}', 'Volume':'{:,}'}
+dataframe_card4.style.format(format_dict)
+
+# shows the min, max values
+(dataframe_card4.style.format(format_dict)
+.hide_index()
+.highlight_min('Number of Nodes', color='red')
+.highlight_max('Number of Nodes', color='lightgreen')
+)
+
+# shows gradient for the values
+(dataframe_card4.style.format(format_dict)
+.hide_index()
+.background_gradient(subset='Volume', cmap='Blues')
+)
+
+# show bar chart on the values, with caption
+(dataframe_card4.style.format(format_dict)
+.hide_index()
+.bar(Volume', color='lightblue', align='zero')
+.set_caption('Stock Prices from October 2016')
+)
+
+-------------------------------------------------------------------------------------------
+
+# profile a dataframe
+import pandas_profiling
+pandas_profiling.ProfileReport(titanic)
+
+-------------------------------------------------------------------------------------------
+
+
+
+

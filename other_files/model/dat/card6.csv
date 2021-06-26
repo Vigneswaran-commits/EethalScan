@@ -1,0 +1,6 @@
+Filename,Solution_Name,Elements_Used
+test_model1.dat,Elastic analysis with multi-loads,"9, 7"
+test_model2.dat,Elastic analysis with multi-loads,"7, 75, 98, 138"
+test_model3.dat,Elastic analysis with multi-loads,75
+test_model4.dat,Elastic analysis with multi-loads,134
+test_model5.dat,Large strain analysis with updated lagrange formulation,"7, 75"

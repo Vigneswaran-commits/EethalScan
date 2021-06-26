@@ -1,0 +1,37 @@
+ /---------------------------------------------------------------------\
+|                                                                       |
+|   Log  of Translation of Nastran *bdf File Into Mentat *mfd/mud File  |
+|                                                                       |
+ \---------------------------------------------------------------------/
+
+
+
+ /---------------------------------------------------------------------\
+|                            Parsing                                    |
+ \---------------------------------------------------------------------/
+
+ Unrecognized Card Type(3): ASSIGN
+ Unrecognized Card Type(4): ASSIGN
+ Unrecognized Card Type(5): ASSIGN
+ Unrecognized Card Type(6): ASSIGN
+ Unrecognized Card Type(11): TIME
+ Unrecognized Card Type(12): CEND
+ Unsupported  Card Type(13): SEALL
+ Unsupported  Card Type(14): SUPER
+ Unsupported  Card Type(15): TITLE
+ Unsupported  Card Type(16): ECHO
+ Unsupported  Card Type(17): MAXLINES
+ Unsupported  Card Type(21): SET
+ Unsupported  Card Type(23): DESOBJ
+ Unsupported  Card Type(25): DSAPRT
+ Unsupported  Card Type(28): SUBTITLE
+ Unsupported  Card Type(30): METHOD
+ Unsupported  Card Type(31): MEFFMASS
+ Unsupported  Card Type(32): DISPLACEMENT
+ Unsupported  Card Type(33): DESSUB
+ Unsupported  Card Type(39): PARAM    POST             0             
+ Unsupported  Card Type(40): PARAM   PRTMAXIM         YES            
+ Unsupported  Card Type(41): PARAM    NOCOMPS         -1             
+ Unsupported  Card Type(42): PARAM    K6ROT           100.0          
+ Unsupported  Card Type(43): MDLPRM  HDF5            1               
+ Include file ../MESH/coordSys.bdf does not exist.

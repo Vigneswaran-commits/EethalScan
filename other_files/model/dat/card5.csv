@@ -1,0 +1,11 @@
+Filename,Element_Type,Available_Analysis_Options_To_Use
+test_model1.dat,Element 9,DYNAMIC
+test_model1.dat,Element 7,"ADAPTIVE,DYNAMIC,CONSTANT DILATATION,ASSUMED STRAIN,FOLLOW FOR,CREEP"
+test_model2.dat,Element 7,"ADAPTIVE,DYNAMIC,CONSTANT DILATATION,ASSUMED STRAIN,FOLLOW FOR,CREEP"
+test_model2.dat,Element 75,"ADAPTIVE,DYNAMIC,FOLLOW FOR,CREEP"
+test_model2.dat,Element 98,"ELASTIC,DYNAMIC,CREEP"
+test_model2.dat,Element 138,CREEP
+test_model3.dat,Element 75,"ADAPTIVE,DYNAMIC,FOLLOW FOR,CREEP"
+test_model4.dat,Element 134,
+test_model5.dat,Element 7,"ADAPTIVE,DYNAMIC,CONSTANT DILATATION,ASSUMED STRAIN,FOLLOW FOR,CREEP"
+test_model5.dat,Element 75,"ADAPTIVE,DYNAMIC,FOLLOW FOR,CREEP"

@@ -1,0 +1,11 @@
+1. To remove everything after @, Find what=[@].* Replace=Nothing
+2. To put : at end of each line, Find what=$ Replace=:
+3. Keep only first three chars, Find what=^(.{3}).* Replace=\1
+4. insert % after first space, Find what=^\S+\h\K Replace=%
+  ^         # beginning of line
+  \S+       # 1 or more non space
+  \h        # 1 horizontal space
+  \K        # forget all we've seen until this position
+5. To replaces Yes with "Yes", Find what=\Y.*?S Replace="Yes"
+6. Remove first 8 chars, Find what=^.{27}(.*)$ Replace=$1
+7. To put : at start of each line, Find what=^ Replace=:

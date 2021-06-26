@@ -1,0 +1,220 @@
+$#
+$# Groups for Patran and post-processing :
+$#
+sys_poll_option( 2 )
+$#
+$# Bars of frame :
+$#
+ga_group_create( "bar_MXMY" )
+ga_group_entity_add( "bar_MXMY", " Node 20101 20155 20209 20263 20317 203" // @
+"71 40077 40128 40182 40236 40290 40344 80191:80201 80295:80296 Element 80" // @
+"201:80212" // @
+" MPC 83050:83099 Element 83050:83099" )
+ga_group_create( "bar_MXMZ" )
+ga_group_entity_add( "bar_MXMZ", " Node 20399 20401 20403 20405 20407 204" // @
+"09 20411 20413 20415 20417 20419 60077 60131 60185 60239 60293 60347 6040" // @
+"1 60455 60509 60563 60617 80001:80021 80266 80291 Element 80001:80022" // @
+" MPC 83450:83499 Element 83450:83499" )
+ga_group_create( "bar_MXPY" )
+ga_group_entity_add( "bar_MXPY", " Node 20077 20131 20185 20239 20293 203" // @
+"47 50101 50155 50209 50263 50317 50371 80180:80190 80269:80270 Element 80" // @
+"189:80200" // @
+" MPC 83100:83149 Element 83100:83149" )
+ga_group_create( "bar_MXPZ" )
+ga_group_entity_add( "bar_MXPZ", " Node 20029 20031 20033 20035 20037 200" // @
+"39 20041 20043 20045 20047 20049 70077 70131 70185 70228 70260 70292 7032" // @
+"4 70356 70388 70442 70496 80085:80105 80268 80293 Element 80089:80110" // @
+" MPC 83150:83199 Element 83150:83199" )
+ga_group_create( "bar_MYMZ" )
+ga_group_entity_add( "bar_MYMZ", " Node 40396 40398 40400 40402 40404 404" // @
+"06 40408 40410 40412 40414 40416 60029 60031 60033 60035 60037 60039 6004" // @
+"1 60043 60045 60047 60049 80022:80042 80213 80292 Element 80023:80044" // @
+" MPC 83500:83549 Element 83500:83549" )
+ga_group_create( "bar_MYPZ" )
+ga_group_entity_add( "bar_MYPZ", " Node 40029 40031 40033 40035 40037 400" // @
+"39 40041 40043 40045 40047 40049 70029 70031 70033 70035 70037 70039 7004" // @
+"1 70043 70045 70047 70049 80106:80126 80215 80294 Element 80111:80132" // @
+" MPC 83200:83249 Element 83200:83249" )
+ga_group_create( "bar_PXMY" )
+ga_group_entity_add( "bar_PXMY", " Node 30077 30131 30185 30239 30293 303" // @
+"47 40101 40152 40206 40260 40314 40368 80202:80212 80217:80218 Element 80" // @
+"213:80224" // @
+" MPC 83250:83299 Element 83250:83299" )
+ga_group_create( "bar_PXMZ" )
+ga_group_entity_add( "bar_PXMZ", " Node 30399 30401 30403 30405 30407 304" // @
+"09 30411 30413 30415 30417 30419 60101 60155 60209 60263 60317 60371 6042" // @
+"5 60479 60533 60587 60641 80043:80063 80214 80239 Element 80045:80066" // @
+" MPC 83550:83599 Element 83550:83599" )
+ga_group_create( "bar_PXPY" )
+ga_group_entity_add( "bar_PXPY", " Node 30101 30155 30209 30263 30317 303" // @
+"71 50077 50131 50185 50239 50293 50347 80169:80179 80243:80244 Element 80" // @
+"177:80188 MPC 83300:83349 Element 83300:83349" )
+ga_group_create( "bar_PXPZ" )
+ga_group_entity_add( "bar_PXPZ", " Node 30029 30031 30033 30035 30037 300" // @
+"39 30041 30043 30045 30047 30049 70101 70155 70209 70241 70273 70305 7033" // @
+"7 70369 70412 70466 70520 80127:80147 80216 80241 Element 80133:80154" // @
+" MPC 83350:83399 Element 83350:83399" )
+ga_group_create( "bar_PYMZ" )
+ga_group_entity_add( "bar_PYMZ", " Node 50399 50401 50403 50405 50407 504" // @
+"09 50411 50413 50415 50417 50419 60669 60671 60673 60675 60677 60679 6068" // @
+"1 60683 60685 60687 60689 80064:80084 80240 80265 Element 80067:80088" // @
+" MPC 83600:83649 Element 83600:83649" )
+ga_group_create( "bar_PYPZ" )
+ga_group_entity_add( "bar_PYPZ", " Node 50029 50031 50033 50035 50037 500" // @
+"39 50041 50043 50045 50047 50049 70548 70550 70552 70554 70556 70558 7056" // @
+"0 70562 70564 70566 70568 80148:80168 80242 80267 Element 80155:80176" // @
+" MPC 83400:83449 Element 83400:83449" )
+$#
+$# Corners of frame :
+$#
+ga_group_create( "corner_MXMYMZ" )
+ga_group_entity_add( "corner_MXMYMZ", " Node 20916:20918 40907:40909 6072" // @
+"7:60729 80291:80292 80295 80297 Element 80226" // @
+" MPC 84350:84399 Element 84350:84399" )
+ga_group_create( "corner_MXMYPZ" )
+ga_group_entity_add( "corner_MXMYPZ", " Node 20913:20915 40910:40912 7120" // @
+"5:71207 80293:80294 80296 80298 Element 80227" // @
+" MPC 84400:84449 Element 84400:84449" )
+ga_group_create( "corner_MXPYMZ" )
+ga_group_entity_add( "corner_MXPYMZ", " Node 20907:20909 50916:50918 6072" // @
+"4:60726 80265:80266 80269 80271 Element 80225" // @
+" MPC 84250:84299 Element 84250:84299" )
+ga_group_create( "corner_MXPYPZ" )
+ga_group_entity_add( "corner_MXPYPZ", " Node 20910:20912 50913:50915 7120" // @
+"2:71204 80267:80268 80270 80272 Element 80229" // @
+" MPC 84300:84349 Element 84300:84349" )
+ga_group_create( "corner_PXMYMZ" )
+ga_group_entity_add( "corner_PXMYMZ", " Node 30907:30909 40904:40906 6071" // @
+"8:60720 80213:80214 80217 80219 Element 80230" // @
+" MPC 84150:84199 Element 84150:84199" )
+ga_group_create( "corner_PXMYPZ" )
+ga_group_entity_add( "corner_PXMYPZ", " Node 30910:30912 40901:40903 7119" // @
+"6:71198 80215:80216 80218 80220 Element 80228" // @
+" MPC 84200:84249 Element 84200:84249" )
+ga_group_create( "corner_PXPYMZ" )
+ga_group_entity_add( "corner_PXPYMZ", " Node 30916:30918 50907:50909 6072" // @
+"1:60723 80239:80240 80243 80245 Element 80232" // @
+" MPC 84100:84149 Element 84100:84149" )
+ga_group_create( "corner_PXPYPZ" )
+ga_group_entity_add( "corner_PXPYPZ", " Node 30913:30915 50910:50912 7119" // @
+"9:71201 80241:80242 80244 80246 Element 80231" // @
+" MPC 84050:84099 Element 84050:84099" )
+$#
+$# Panels :
+$#
+ga_group_create( "pan_MX" )
+ga_group_entity_add( "pan_MX", "Node 20000:24999 Element 20000:24999" )
+ga_group_create( "pan_PX" )
+ga_group_entity_add( "pan_PX", "Node 30000:34999 Element 30000:34999" )
+ga_group_create( "pan_MY" )
+ga_group_entity_add( "pan_MY", "Node 40000:44999 Element 40000:44999" )
+ga_group_create( "pan_PY" )
+ga_group_entity_add( "pan_PY", "Node 50000:54999 Element 50000:54999" )
+ga_group_create( "pan_MZ" )
+ga_group_entity_add( "pan_MZ", "Node 60000:64999 Element 60000:64999" )
+ga_group_create( "pan_PZ" )
+ga_group_entity_add( "pan_PZ", "Node 70000:74999 Element 70000:74999" )
+ga_group_create( "pan_SUP" )
+ga_group_entity_add( "pan_SUP", "Node 90000:94999 Element 90000:94999" )
+$#
+$# Fittings :
+$#
+ga_group_create( "fitting_MXMYPZ" )
+ga_group_entity_add( "fitting_MXMYPZ", " Node 85004 85028 85069 90004:9000" // @
+"6 Element 85123 MPC 89300:89349 Element 89300:89349" )
+ga_group_create( "fitting_MXMZ" )
+ga_group_entity_add( "fitting_MXMZ", " Node 71215:71217 85002 85049 85090 " // @
+"Element 85124 MPC 89150:89199 Element 89150:89199" )
+ga_group_create( "fitting_MXPYPZ" )
+ga_group_entity_add( "fitting_MXPYPZ", " Node 85005 85070 85091 90001:9000" // @
+"3 Element 85121 MPC 89200:89249 Element 89200:89249" )
+ga_group_create( "fitting_PXMYMZ" )
+ga_group_entity_add( "fitting_PXMYMZ", " Node 71209:71211 85001 85027 8504" // @
+"8 Element 85126 MPC 89100:89149 Element 89100:89149" )
+ga_group_create( "fitting_PXPYMZ" )
+ga_group_entity_add( "fitting_PXPYMZ", " Node 71212:71214 85003 85111 8513" // @
+"2 Element 85125 MPC 89050:89099 Element 89050:89099" )
+ga_group_create( "fitting_PXPZ" )
+ga_group_entity_add( "fitting_PXPZ", " Node 85006:85007 85112 90007:90009 " // @
+"Element 85122 MPC 89250:89299 Element 89250:89299" )
+ga_group_create( "fittings_ALL" )
+ga_group_entity_add( "fittings_ALL", " Node 71209:71217 85001:85007 85027:" // @
+"85028 85048:85049 85069:85070 85090:85091 85111:85112 85132 90001:90009 E" // @
+"lement 85121:85126 MPC 89000:89999 Element 89000:89999" )
+$#
+$# Struts :
+$#
+ga_group_create( "strut_A" )
+ga_group_entity_add( "strut_A", " Node 85112:85132 Element 85101:85120" )
+ga_group_create( "strut_B" )
+ga_group_entity_add( "strut_B", " Node 85007:85027 Element 85001:85020" )
+ga_group_create( "strut_C" )
+ga_group_entity_add( "strut_C", " Node 85028:85048 Element 85021:85040" )
+ga_group_create( "strut_D" )
+ga_group_entity_add( "strut_D", " Node 85049:85069 Element 85041:85060" )
+ga_group_create( "strut_E" )
+ga_group_entity_add( "strut_E", " Node 85070:85090 Element 85061:85080" )
+ga_group_create( "strut_F" )
+ga_group_entity_add( "strut_F", " Node 85091:85111 Element 85081:85100" )
+ga_group_create( "struts_ALL" )
+ga_group_entity_add( "struts_ALL", " Node 85007:85132 Element 85001:85120" )
+$#
+$# Equipments :
+$#
+ga_group_create( "pan_MX_box_A" )
+ga_group_entity_add( "pan_MX_box_A", " Node 20090 20093 20096 20099 20225 " // @
+"20234 20360 20363 20366 20369 20919 Element 21305" // @
+" MPC 25050:25099 Element 25050:25099" )
+ga_group_create( "pan_MX_box_B" )
+ga_group_entity_add( "pan_MX_box_B", " Node 20083 20085 20087 20218 20222 " // @
+"20353 20355 20357 20920 Element 21314" // @
+" MPC 25100:25149 Element 25100:25149" )
+$#
+ga_group_create( "pan_MY_box_A" )
+ga_group_entity_add( "pan_MY_box_A", " Node 40079 40081 40083 40211 40215 " // @
+"40346 40348 40350 40913 Element 41287:41288" // @
+" MPC 45050:45099 Element 45050:45099" )
+ga_group_create( "pan_MY_box_B" )
+ga_group_entity_add( "pan_MY_box_B", " Node 40085 40087 40089 40217 40221 " // @
+"40352 40354 40356 40914 Element 41289" // @
+" MPC 45100:45149 Element 45100:45149" )
+ga_group_create( "pan_MY_box_C" )
+ga_group_entity_add( "pan_MY_box_C", " Node 40197 40199 40201 40203 40251 " // @
+"40257 40305 40311 40359 40361 40363 40365 40915 Element 41302" // @
+" MPC 45150:45199 Element 45150:45199" )
+$#
+ga_group_create( "pan_PX_antenna" )
+ga_group_entity_add( "pan_PX_antenna", " Node 30550 30552 30604 30606 3091" // @
+"9 Element 31327" // @
+" MPC 35050:35099 Element 35050:35099" )
+ga_group_create( "pan_PX_box_A" )
+ga_group_entity_add( "pan_PX_box_A", " Node 30080 30082 30084 30086 30088 " // @
+"30090 30134 30144 30188 30198 30242 30252 30296 30306 30350 30352 30354 3" // @
+"0356 30358 30360 30921 Element 31329" // @
+" MPC 35150:35199 Element 35150:35199" )
+ga_group_create( "pan_PX_box_B" )
+ga_group_entity_add( "pan_PX_box_B", " Node 30228 30231 30234 30309 30315 " // @
+"30389 30392 30395 30920 Element 31328" // @
+" MPC 35100:35149 Element 35100:35149" )
+$#
+ga_group_create( "pan_PY_box_A" )
+ga_group_entity_add( "pan_PY_box_A", " Node 50143 50145 50147 50149 50151 " // @
+"50153 50197 50207 50251 50261 50305 50315 50359 50361 50363 50365 50367 5" // @
+"0369 50919 Element 51333" // @
+" MPC 55150:55199 Element 55150:55199" )
+ga_group_create( "pan_PY_box_B" )
+ga_group_entity_add( "pan_PY_box_B", " Node 50241 50243 50245 50247 50295 " // @
+"50301 50349 50351 50353 50355 50920 Element 51334" // @
+" MPC 55050:55099 Element 55050:55099" )
+ga_group_create( "pan_PY_box_C" )
+ga_group_entity_add( "pan_PY_box_C", " Node 50079 50081 50083 50085 50133 " // @
+"50139 50187 50189 50191 50193 50921 Element 51335" // @
+" MPC 55100:55149 Element 55100:55149" )
+$#
+ga_group_create( "pan_PZ_instrument" )
+ga_group_entity_add( "pan_PZ_instrument",  @
+" Node 70821 70827 70833 70921:70922 71010 71016 71022 71208 Element 71661" // @
+" MPC 75050:75099 Element 75050:75099" )
+$#
+sys_poll_option( 0 )
+$#

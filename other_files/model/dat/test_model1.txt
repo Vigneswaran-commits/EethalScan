@@ -1,0 +1,42 @@
+Card 1 Element(s) suitable for this analysis option:
+----------------------------------------------------
+ELASTIC:[21, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 67, 68, 73, 74, 98, 124, 125, 126, 127, 184]
+Card 2 Element description:
+---------------------------
+Element 9:Three-dimensional Truss
+Element 7:Three-dimensional Arbitrarily Distorted Brick
+Card 3 Element class and other elements in the class:
+-----------------------------------------------------
+Element 9:Class2
+Other elements in Element 9 class:[36]
+Element 7:Class5
+Other elements in Element 7 class:[43, 84, 113, 163]
+Card 4 Element(s) Properties:
+-----------------------------
+Element_Type:9
+Number_of_Nodes:2
+Number_of_DirectStress:1
+Number_of_ShearStress:0
+Number_of_IntegrationPoints:1
+Number_of_DegreesofFreedom:2/3
+Number_of_Coordinates:2/3
+Updated_Lagrange_Available:Yes
+Element_Type:7
+Number_of_Nodes:8
+Number_of_DirectStress:3
+Number_of_ShearStress:3
+Number_of_IntegrationPoints:8
+Number_of_DegreesofFreedom:3
+Number_of_Coordinates:3
+Updated_Lagrange_Available:Yes
+Card 5 Analysis options to use:
+-------------------------------
+Element 9:DYNAMIC,
+Element 7:ADAPTIVE,DYNAMIC,CONSTANT DILATATION,ASSUMED STRAIN,FOLLOW FOR,CREEP,
+Card 6 Analysis: 
+----------------
+Elastic analysis with multi-loads:[9, 7]
+Card 7 Card related to analysis options used: 
+---------------------------------------------
+ELASTIC:['POINT LOAD', 'DISTLOADS', 'CHANGE STATE', 'THERMAL LOADS', 'ADAPTIVE']
+Card 0

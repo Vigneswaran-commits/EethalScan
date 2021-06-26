@@ -1,0 +1,427 @@
+ /---------------------------------------------------------------------\
+|                                                                       |
+|   Log  of Translation of Nastran *bdf File Into Mentat *mfd/mud File  |
+|                                                                       |
+ \---------------------------------------------------------------------/
+
+
+
+ /---------------------------------------------------------------------\
+|                            Parsing                                    |
+ \---------------------------------------------------------------------/
+
+
+
+ /---------------------------------------------------------------------\
+|                            Parsing Summary                            |
+ \---------------------------------------------------------------------/
+
+           Total Number of Lines in Input File:              130
+           Total Number of Unrecognized Cards in Input File: 0
+           Total Number of Unsupported  Cards in Input File: 0
+
+
+
+ /---------------------------------------------------------------------\
+|                       NASTRAN Model Summary                           |
+|          use grep -c CARD_NAME to check Parsing Summary               |
+ \---------------------------------------------------------------------/
+
+|-----------------------------------------------------------------------|
+|                LOAD CASE SECTION PARSED COUNTS SUMMARY                |
+|-----------------------------------------------------------------------|
+
+
+|-----------------------------------------------------------------------|
+|                BULK DATA SECTION PARSED COUNTS SUMMARY                |
+|-----------------------------------------------------------------------|
+
+                              CBAR     :                   124
+
+
+ /---------------------------------------------------------------------\
+|                            Translation                                |
+ \---------------------------------------------------------------------/
+
+Element: 25051  Translation not Performed -> missing node: 20919
+Element: 25052  Translation not Performed -> missing node: 20919
+Element: 25053  Translation not Performed -> missing node: 20919
+Element: 25054  Translation not Performed -> missing node: 20919
+Element: 25055  Translation not Performed -> missing node: 20919
+Element: 25056  Translation not Performed -> missing node: 20919
+Element: 25057  Translation not Performed -> missing node: 20919
+Element: 25058  Translation not Performed -> missing node: 20919
+Element: 25059  Translation not Performed -> missing node: 20919
+Element: 25060  Translation not Performed -> missing node: 20919
+Element: 25101  Translation not Performed -> missing node: 20920
+Element: 25102  Translation not Performed -> missing node: 20920
+Element: 25103  Translation not Performed -> missing node: 20920
+Element: 25104  Translation not Performed -> missing node: 20920
+Element: 25105  Translation not Performed -> missing node: 20920
+Element: 25106  Translation not Performed -> missing node: 20920
+Element: 25107  Translation not Performed -> missing node: 20920
+Element: 25108  Translation not Performed -> missing node: 20920
+Element: 35051  Translation not Performed -> missing node: 30919
+Element: 35052  Translation not Performed -> missing node: 30919
+Element: 35053  Translation not Performed -> missing node: 30919
+Element: 35054  Translation not Performed -> missing node: 30919
+Element: 35101  Translation not Performed -> missing node: 30920
+Element: 35102  Translation not Performed -> missing node: 30920
+Element: 35103  Translation not Performed -> missing node: 30920
+Element: 35104  Translation not Performed -> missing node: 30920
+Element: 35105  Translation not Performed -> missing node: 30920
+Element: 35106  Translation not Performed -> missing node: 30920
+Element: 35107  Translation not Performed -> missing node: 30920
+Element: 35108  Translation not Performed -> missing node: 30920
+Element: 35151  Translation not Performed -> missing node: 30921
+Element: 35152  Translation not Performed -> missing node: 30921
+Element: 35153  Translation not Performed -> missing node: 30921
+Element: 35154  Translation not Performed -> missing node: 30921
+Element: 35155  Translation not Performed -> missing node: 30921
+Element: 35156  Translation not Performed -> missing node: 30921
+Element: 35157  Translation not Performed -> missing node: 30921
+Element: 35158  Translation not Performed -> missing node: 30921
+Element: 35159  Translation not Performed -> missing node: 30921
+Element: 35160  Translation not Performed -> missing node: 30921
+Element: 35161  Translation not Performed -> missing node: 30921
+Element: 35162  Translation not Performed -> missing node: 30921
+Element: 35163  Translation not Performed -> missing node: 30921
+Element: 35164  Translation not Performed -> missing node: 30921
+Element: 35165  Translation not Performed -> missing node: 30921
+Element: 35166  Translation not Performed -> missing node: 30921
+Element: 35167  Translation not Performed -> missing node: 30921
+Element: 35168  Translation not Performed -> missing node: 30921
+Element: 35169  Translation not Performed -> missing node: 30921
+Element: 35170  Translation not Performed -> missing node: 30921
+Element: 45051  Translation not Performed -> missing node: 40913
+Element: 45052  Translation not Performed -> missing node: 40913
+Element: 45053  Translation not Performed -> missing node: 40913
+Element: 45054  Translation not Performed -> missing node: 40913
+Element: 45055  Translation not Performed -> missing node: 40913
+Element: 45056  Translation not Performed -> missing node: 40913
+Element: 45057  Translation not Performed -> missing node: 40913
+Element: 45058  Translation not Performed -> missing node: 40913
+Element: 45101  Translation not Performed -> missing node: 40914
+Element: 45102  Translation not Performed -> missing node: 40914
+Element: 45103  Translation not Performed -> missing node: 40914
+Element: 45104  Translation not Performed -> missing node: 40914
+Element: 45105  Translation not Performed -> missing node: 40914
+Element: 45106  Translation not Performed -> missing node: 40914
+Element: 45107  Translation not Performed -> missing node: 40914
+Element: 45108  Translation not Performed -> missing node: 40914
+Element: 45151  Translation not Performed -> missing node: 40915
+Element: 45152  Translation not Performed -> missing node: 40915
+Element: 45153  Translation not Performed -> missing node: 40915
+Element: 45154  Translation not Performed -> missing node: 40915
+Element: 45155  Translation not Performed -> missing node: 40915
+Element: 45156  Translation not Performed -> missing node: 40915
+Element: 45157  Translation not Performed -> missing node: 40915
+Element: 45158  Translation not Performed -> missing node: 40915
+Element: 45159  Translation not Performed -> missing node: 40915
+Element: 45160  Translation not Performed -> missing node: 40915
+Element: 45161  Translation not Performed -> missing node: 40915
+Element: 45162  Translation not Performed -> missing node: 40915
+Element: 55051  Translation not Performed -> missing node: 50920
+Element: 55052  Translation not Performed -> missing node: 50920
+Element: 55053  Translation not Performed -> missing node: 50920
+Element: 55054  Translation not Performed -> missing node: 50920
+Element: 55055  Translation not Performed -> missing node: 50920
+Element: 55056  Translation not Performed -> missing node: 50920
+Element: 55057  Translation not Performed -> missing node: 50920
+Element: 55058  Translation not Performed -> missing node: 50920
+Element: 55059  Translation not Performed -> missing node: 50920
+Element: 55060  Translation not Performed -> missing node: 50920
+Element: 55101  Translation not Performed -> missing node: 50921
+Element: 55102  Translation not Performed -> missing node: 50921
+Element: 55103  Translation not Performed -> missing node: 50921
+Element: 55104  Translation not Performed -> missing node: 50921
+Element: 55105  Translation not Performed -> missing node: 50921
+Element: 55106  Translation not Performed -> missing node: 50921
+Element: 55107  Translation not Performed -> missing node: 50921
+Element: 55108  Translation not Performed -> missing node: 50921
+Element: 55109  Translation not Performed -> missing node: 50921
+Element: 55110  Translation not Performed -> missing node: 50921
+Element: 55151  Translation not Performed -> missing node: 50919
+Element: 55152  Translation not Performed -> missing node: 50919
+Element: 55153  Translation not Performed -> missing node: 50919
+Element: 55154  Translation not Performed -> missing node: 50919
+Element: 55155  Translation not Performed -> missing node: 50919
+Element: 55156  Translation not Performed -> missing node: 50919
+Element: 55157  Translation not Performed -> missing node: 50919
+Element: 55158  Translation not Performed -> missing node: 50919
+Element: 55159  Translation not Performed -> missing node: 50919
+Element: 55160  Translation not Performed -> missing node: 50919
+Element: 55161  Translation not Performed -> missing node: 50919
+Element: 55162  Translation not Performed -> missing node: 50919
+Element: 55163  Translation not Performed -> missing node: 50919
+Element: 55164  Translation not Performed -> missing node: 50919
+Element: 55165  Translation not Performed -> missing node: 50919
+Element: 55166  Translation not Performed -> missing node: 50919
+Element: 55167  Translation not Performed -> missing node: 50919
+Element: 55168  Translation not Performed -> missing node: 50919
+Element: 75051  Translation not Performed -> missing node: 71208
+Element: 75052  Translation not Performed -> missing node: 71208
+Element: 75053  Translation not Performed -> missing node: 71208
+Element: 75054  Translation not Performed -> missing node: 71208
+Element: 75055  Translation not Performed -> missing node: 71208
+Element: 75056  Translation not Performed -> missing node: 71208
+Element: 75057  Translation not Performed -> missing node: 71208
+Element: 75058  Translation not Performed -> missing node: 71208 
+Non Existent Geometry: 5001 For Translation of Beam Orientation    - Translation not Performed 
+Warning: Element: 25051 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 25052 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 25053 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 25054 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 25055 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 25056 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 25057 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 25058 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 25059 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 25060 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 25101 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 25102 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 25103 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 25104 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 25105 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 25106 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 25107 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 25108 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 35051 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 35052 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 35053 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 35054 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 35101 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 35102 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 35103 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 35104 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 35105 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 35106 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 35107 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 35108 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 35151 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 35152 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 35153 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 35154 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 35155 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 35156 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 35157 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 35158 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 35159 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 35160 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 35161 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 35162 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 35163 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 35164 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 35165 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 35166 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 35167 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 35168 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 35169 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 35170 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 45051 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 45052 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 45053 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 45054 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 45055 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 45056 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 45057 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 45058 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 45101 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 45102 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 45103 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 45104 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 45105 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 45106 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 45107 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 45108 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 45151 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 45152 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 45153 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 45154 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 45155 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 45156 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 45157 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 45158 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 45159 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 45160 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 45161 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 45162 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 55051 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 55052 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 55053 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 55054 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 55055 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 55056 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 55057 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 55058 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 55059 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 55060 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 55101 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 55102 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 55103 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 55104 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 55105 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 55106 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 55107 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 55108 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 55109 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 55110 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 55151 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 55152 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 55153 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 55154 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 55155 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 55156 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 55157 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 55158 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 55159 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 55160 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 55161 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 55162 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 55163 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 55164 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 55165 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 55166 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 55167 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 55168 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 75051 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 75052 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 75053 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 75054 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 75055 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 75056 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 75057 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 75058 Was not            translated into Mentat Database, Assignment of Geometry            can Not be Performed
+Warning: Element: 25051 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 25052 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 25053 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 25054 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 25055 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 25056 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 25057 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 25058 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 25059 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 25060 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 25101 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 25102 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 25103 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 25104 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 25105 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 25106 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 25107 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 25108 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 35051 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 35052 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 35053 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 35054 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 35101 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 35102 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 35103 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 35104 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 35105 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 35106 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 35107 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 35108 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 35151 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 35152 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 35153 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 35154 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 35155 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 35156 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 35157 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 35158 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 35159 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 35160 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 35161 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 35162 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 35163 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 35164 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 35165 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 35166 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 35167 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 35168 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 35169 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 35170 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 45051 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 45052 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 45053 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 45054 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 45055 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 45056 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 45057 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 45058 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 45101 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 45102 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 45103 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 45104 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 45105 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 45106 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 45107 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 45108 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 45151 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 45152 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 45153 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 45154 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 45155 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 45156 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 45157 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 45158 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 45159 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 45160 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 45161 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 45162 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 55051 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 55052 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 55053 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 55054 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 55055 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 55056 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 55057 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 55058 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 55059 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 55060 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 55101 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 55102 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 55103 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 55104 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 55105 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 55106 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 55107 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 55108 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 55109 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 55110 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 55151 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 55152 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 55153 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 55154 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 55155 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 55156 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 55157 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 55158 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 55159 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 55160 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 55161 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 55162 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 55163 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 55164 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 55165 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 55166 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 55167 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 55168 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 75051 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 75052 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 75053 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 75054 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 75055 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 75056 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 75057 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+Warning: Element: 75058 Was not    translated into Mentat Database, Assignment of Type    can Not be Performed
+
+
+
+ /---------------------------------------------------------------------\
+|                                                                       |
+| For requesting an enhancement or reporting a bug, please contact      |
+| MSC Software support: http://support.mscsoftware.com/servicerequest   |
+|                                                                       |
+ \---------------------------------------------------------------------/

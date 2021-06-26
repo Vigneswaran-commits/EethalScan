@@ -1,0 +1,58 @@
+Card 1 Element(s) suitable for this analysis type:
+-------------------------------------------
+
+ELASTIC : [21, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 67, 68, 73, 74, 98, 124, 125, 126, 127, 184]
+
+HEAT : [36, 37, 38, 39, 40, 41, 42, 43, 44, 50, 65, 69, 70, 71, 85, 86, 87, 88, 101, 102, 103, 104, 105, 106, 121, 122, 123, 131, 132, 133, 135, 136, 175, 176, 177, 178, 179, 180, 196, 197, 198, 199, 203, 220, 221, 222, 223, 224, 225, 226, 227]
+
+Card 2 Element names:
+--------------
+
+Element 9: Three-dimensional Truss
+Element 7: Three-dimensional Arbitrarily Distorted Brick
+
+Card 3 Element(s) class:
+-----------------
+
+Element 9 belongs to Class2
+Other elements in this class are [36]
+
+Element 7 belongs to Class5
+Other elements in this class are [43, 84, 113, 163]
+
+Card 4 Element(s) Properties:
+----------------------
+
+Element Type: 9
+Number of Nodes: 2
+Number of Direct Stress: 1
+Number of Shear Stress: 0
+Number of Integration Points: 1
+Number of Degrees ofFreedom: 2/3
+Number of Coordinates: 2/3
+Updated Lagrange Available: Yes
+
+Element Type: 7
+Number of Nodes: 8
+Number of Direct Stress: 3
+Number of Shear Stress: 3
+Number of Integration Points: 8
+Number of Degrees ofFreedom: 3
+Number of Coordinates: 3
+Updated Lagrange Available: Yes
+
+Card 5 Analysis options to use:
+------------------------
+
+Element type 9 can use analysis option(s): DYNAMIC, 
+Element type 7 can use analysis option(s): ADAPTIVE, DYNAMIC, CONSTANT DILATATION, ASSUMED STRAIN, FOLLOW FOR, CREEP, 
+
+Card 6 Multiphysics: 
+-------------
+
+Card 7 Card related to analysis options used: 
+--------------------------------------
+
+ELASTIC : ['POINT LOAD', 'DISTLOADS', 'CHANGE STATE', 'THERMAL LOADS', 'ADAPTIVE']
+HEAT : ['FLUID', 'STRUCTURAL', 'JOULE', 'ELECTRO', 'MAGNETO', 'EL-MA']
+Card 0

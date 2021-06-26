@@ -1,0 +1,59 @@
+#---------------------------------------------------------------------------------------
+cd C:\Users\vajravel\Desktop\Eethalview\Marc
+"C:\Users\vajravel\AppData\Local\Programs\Python\Python39\python.exe" eethal_dat_scan.py -i C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\test_model1.dat -o C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\test_model1.txt
+
+cd C:\Users\vajravel\Desktop\Eethalview\Marc
+"C:\Users\vajravel\AppData\Local\Programs\Python\Python39\python.exe" eethal_dat_scan.py -i C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\test_model2.dat -o C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\test_model2.txt
+
+cd C:\Users\vajravel\Desktop\Eethalview\Marc
+"C:\Users\vajravel\AppData\Local\Programs\Python\Python39\python.exe" eethal_dat_scan.py -i C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\test_model3.dat -o C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\test_model3.txt
+
+cd C:\Users\vajravel\Desktop\Eethalview\Marc
+"C:\Users\vajravel\AppData\Local\Programs\Python\Python39\python.exe" eethal_dat_scan.py -i C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\test_model4.dat -o C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\test_model4.txt
+
+cd C:\Users\vajravel\Desktop\Eethalview\Marc
+"C:\Users\vajravel\AppData\Local\Programs\Python\Python39\python.exe" eethal_dat_scan.py -i C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\test_model5.dat -o C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\test_model5.txt
+
+#---------------------------------------------------------------------------------------
+# for Marc dat files to output text file
+cd C:\Users\vajravel\Desktop\Eethalview\Marc
+"C:\Users\vajravel\AppData\Local\Programs\Python\Python39\python.exe" eethal_dat_scan.py -i C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\test_model1.dat -o C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\test_model1.txt
+
+cd C:\Users\vajravel\Desktop\Eethalview\Marc
+"C:\Users\vajravel\AppData\Local\Programs\Python\Python39\python.exe" eethal_dat_scan.py -i C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\test_model2.dat -o C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\test_model2.txt
+
+cd C:\Users\vajravel\Desktop\Eethalview\Marc
+"C:\Users\vajravel\AppData\Local\Programs\Python\Python39\python.exe" eethal_dat_scan.py -i C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\test_model3.dat -o C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\test_model3.txt
+
+cd C:\Users\vajravel\Desktop\Eethalview\Marc
+"C:\Users\vajravel\AppData\Local\Programs\Python\Python39\python.exe" eethal_dat_scan.py -i C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\test_model4.dat -o C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\test_model4.txt
+
+cd C:\Users\vajravel\Desktop\Eethalview\Marc
+"C:\Users\vajravel\AppData\Local\Programs\Python\Python39\python.exe" eethal_dat_scan.py -i C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\test_model5.dat -o C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\test_model5.txt
+
+cd C:\Users\vajravel\Desktop\Eethalview\Marc
+"C:\Users\vajravel\AppData\Local\Programs\Python\Python39\python.exe" eethal_dat_scan.py -i C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\test_model6.dat -o C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\test_model6.txt
+
+cd C:\Users\vajravel\Desktop\Eethalview\Marc
+"C:\Users\vajravel\AppData\Local\Programs\Python\Python39\python.exe" eethal_dat_scan.py -i C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\test_model7.dat -o C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\test_model7.txt
+
+cd C:\Users\vajravel\Desktop\Eethalview\Marc
+"C:\Users\vajravel\AppData\Local\Programs\Python\Python39\python.exe" eethal_dat_scan.py -i C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\test_model8.dat -o C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\test_model8.txt
+--------------------------------------------------------------------------------
+
+# from Multiple output text files, write csv files
+cd C:\Users\vajravel\Desktop\Eethalview\Mult_out
+"C:\Users\vajravel\AppData\Local\Programs\Python\Python39\python.exe" eethal_mult_out_scan.py -i C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\test_model1.txt C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\test_model2.txt C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\test_model3.txt C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\test_model4.txt C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\test_model5.txt C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\test_model6.txt C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\test_model7.txt C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\test_model8.txt -o C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\
+
+cd C:\Users\vajravel\Desktop\Eethalview\Mult_out
+"C:\Users\vajravel\AppData\Local\Programs\Python\Python39\python.exe" eethal_mult_out_scan.py -i C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\test_model1.txt C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\test_model2.txt C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\test_model3.txt C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\test_model4.txt C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\test_model5.txt -o C:\Users\vajravel\Desktop\Eethalview\other_files\model\dat\
+
+--------------------------------------------------------------------------------
+cd C:\Users\vajravel\AppData\Local\Programs\Python\Python39\Scripts
+jupyter notebook
+
+--------------------------------------------------------------------------------
+manuals
+scan_file
+http://www.mate.tue.nl/~piet/inf/mrc/htm/mameman.html
+
